@@ -5,3 +5,17 @@ GitHub setup
 Folder structure
 Docs sharing
 First push
+
+
+User@DESKTOP-S34S91L MINGW64 /c/Projects/Tekwill/src/Tekwill_oca (master)
+$ git commit -m "My first commit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@DESKTOP-S34S91L MINGW64 /c/Projects/Tekwill/src/Tekwill_oca (master)
+$ git push origin master
+Everything up-to-date
+
+User
