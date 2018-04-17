@@ -1,1 +1,166 @@
 Any /some current notes
+++++++++++++
+
+User@DESKTOP-S34S91L MINGW64 ~ (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .AndroidStudio3.0/
+        .android/
+        .bash_history
+        .gitconfig
+        .gradle/
+        .minttyrc
+        .packettracer
+        .viminfo
+        3D Objects/
+        AndroidStudioProjects/
+        AppData/
+        Cisco Packet Tracer 7.1/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{4757c3a2-34bf-11e8-b27d-80ce623ba753}.TM.blf
+        NTUSER.DAT{4757c3a2-34bf-11e8-b27d-80ce623ba753}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{4757c3a2-34bf-11e8-b27d-80ce623ba753}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-S34S91L MINGW64 ~ (master)
+$ git config --global user.email stud2me@gmail.com
+
+User@DESKTOP-S34S91L MINGW64 ~ (master)
+$ git config --global user.name "BorisDel"
+
+User@DESKTOP-S34S91L MINGW64 ~ (master)
+$ cd /c/projects/tekwill/src/tekwill_oca
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git init
+Reinitialized existing Git repository in C:/Projects/Tekwill/src/tekwill_oca/.git/
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    Lesson0/notes.txt.txt
+        modified:   lesson0/notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Lesson1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git add .
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    Lesson0/notes.txt.txt
+        new file:   Lesson1/notes2.txt
+        modified:   lesson0/notes.txt
+
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git commit -m "Added a new folder"
+[master db64cbb] Added a new folder
+ 3 files changed, 5 insertions(+), 21 deletions(-)
+ delete mode 100644 Lesson0/notes.txt.txt
+ create mode 100644 Lesson1/notes2.txt
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git remote origin https://github.com/BorisDel/Tekwill_oca.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git remote origin add https://github.com/BorisDel/Tekwill_oca.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git remote add origin https://github.com/BorisDel/Tekwill_oca.git
+fatal: remote origin already exists.
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 444 bytes | 444.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/BorisDel/Tekwill_oca.git
+   951b2c1..db64cbb  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+User@DESKTOP-S34S91L MINGW64 /c/projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
++++++++++++++++++++
