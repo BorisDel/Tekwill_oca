@@ -1,4 +1,4 @@
-public class ShoppingCart {
+public class CarShoppingt {
     public static int main(String[] args) {
         //Item item1, item2;
         item1 = new Item();
