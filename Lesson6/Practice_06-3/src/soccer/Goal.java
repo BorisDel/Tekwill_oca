@@ -1,8 +1,8 @@
 package src.soccer;
 
 public class Goal {
-    public String team;
-    public String player;
+    public Team team;
+    public Player player;
     public double time;
 
 }

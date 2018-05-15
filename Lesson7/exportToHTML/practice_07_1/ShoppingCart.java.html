@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>ShoppingCart.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); font-style: italic; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,128); font-weight: bold; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ShoppingCart.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">/* Copyright © 2016 Oracle and/or its affiliates. All rights reserved. */</span><span class="s1"> 
+ 
+</span><span class="s2">package </span><span class="s1">practice_07_1; 
+ 
+</span><span class="s2">public class </span><span class="s1">ShoppingCart { 
+    </span><span class="s2">public static void </span><span class="s1">main(String[] args) { 
+        String custName = </span><span class="s3">&quot;Steve Smith&quot;</span><span class="s1">; 
+        String firstName; 
+        String lastName; 
+        </span><span class="s2">int </span><span class="s1">spaceIdx; 
+ 
+                spaceIdx = custName.indexOf(</span><span class="s3">&quot; &quot;</span><span class="s1">); 
+ 
+        firstName = custName.substring(</span><span class="s4">0</span><span class="s1">, spaceIdx); 
+        lastName = custName.substring(spaceIdx +</span><span class="s4">1 </span><span class="s1">); 
+        System.out.println(</span><span class="s3">&quot;(&quot;</span><span class="s1">+firstName+</span><span class="s3">')'</span><span class="s1">); 
+        System.out.print(firstName); 
+        System.out.print(firstName); 
+        System.out.println(); 
+        System.out.println(lastName + </span><span class="s3">&quot;22&quot;</span><span class="s1">); 
+ 
+        StringBuilder sb = </span><span class="s2">new </span><span class="s1">StringBuilder(firstName); 
+        sb.append(</span><span class="s3">&quot; Smith&quot;</span><span class="s1">); 
+        </span><span class="s0">//sb.append(custName.substring(spaceIdx));</span><span class="s1"> 
+        System.out.println(sb); 
+ 
+    } 
+}</span></pre>
+</body>
+</html>
